@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Visualização 3D em RA</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      body { margin: 0; }
+      model-viewer { width: 100vw; height: 100vh; }
+    </style>
+  </head>
+  <body>
+    <model-viewer
+      src="https://github.com/kauank3/micela-ra/raw/main/micela-v2.glb"
+      ar
+      ar-modes="scene-viewer webxr quick-look"
+      auto-rotate
+      camera-controls
+      shadow-intensity="1">
+    </model-viewer>
+  </body>
+</html>
